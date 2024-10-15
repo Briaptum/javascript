@@ -24,6 +24,12 @@ form.addEventListener('submit', function(event) {
     const outputMoney = document.getElementById('moneyOutput');
     outputMoney.textContent = `${money}`;
 
+    if (name === 'Sovath') {
+        alert('Sovath is an awesome name!');
+    } else if (name === 'Tyler') {
+        alert('That name sounds old');
+    }
+
    
   });
 
