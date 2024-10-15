@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  
+   .main {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    background-color: rgb(81, 232, 182);
+    width: 90vh;
+    text-align: center;
+    height: 70vh;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 100%;
+}
+
+.child {
+    flex: 1;
+}
+.player {
+    border-right: 2px solid rgb(226, 129, 129);
+}
+
+.pd .hat {
+    background-color: black;
+    width: 6vh;
+    height: 2vh;
+    position: relative;
+    top: 90px;
+    left: 190px;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 40%;
+    z-index: 999;
+}
+
+.pd .head {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(247, 216, 178);
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 10vh;
+    min-height: 10vh;
+    position: relative;
+    top: 5rem;
+    color: rgb(94, 93, 93);
+    display: flex;
+    gap: 1rem;
+}
+
+.pd .head .eyes {
+    width: 1vh;
+    height: 1vh;
+    background-color: black;
+    z-index: 9999;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.pd .mouth {
+    width: 2vh;
+    height: 3vh;
+    background-color: black;
+}
+
+.pd .body {
+    background-color: rgb(247, 216, 178);
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 15vh;
+    min-height: 20vh;
+    position: relative;
+    top: 4rem;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form button {
+    border: none;
+    color: #fff;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    background-color: rgb(11, 194, 60);
+}

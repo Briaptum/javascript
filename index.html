@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <title>javascript</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Player Design</h1>
+        <div class="wrap">
+            <div class="child player">
+                <h2>the player</h2>
+
+                <div class="pd">
+                    <div id="hatChange" class="hat">
+
+                    </div>
+                    <div class="head">
+                        <div id="eyesChange" class="eyes right-eye"></div>
+                        <div id="eyesChange" class="eyes left-eye"></div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+            </div>
+            <div class="child player-info">
+                <h2>The design</h2>
+
+                <div class="info">
+                    <p id="about">This is [ <span id="nameOutput"></span> ]. He is [ <span id="ageOutput"></span> ] years old. He has [ <span id="moneyOutput"></span> ]$ </p>
+                    <p id="about">and [ <span id="healthOutput"></span> ]HP.</p>
+
+
+                    <form  id="form" action="" method="get">
+                        <label for="name">Player name</label><br>
+                        <input type="text" id="name" name="name" value=""><br>
+
+                        <label for="age">Player Age</label><br>
+                        <input type="number" id="age" name="age" value=""><br>
+
+                        <label for="health">Player Health</label><br>
+                        <input type="number" id="health" name="health" value=""><br>
+
+                        <label for="money">Player Money ( $ )</label><br>
+                        <input type="number" id="money" name="money" value=""><br>
+
+                        <button type="submit" value="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="my-js.js"></script>
+</body>
+</html>
